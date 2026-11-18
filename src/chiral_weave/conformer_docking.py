@@ -186,7 +186,7 @@ def _embed_metric_matrix(lower: np.ndarray, upper: np.ndarray, rng: np.random.Ge
     if coords.shape[1] < 3:
         pad = np.zeros((n, 3 - coords.shape[1]), dtype=np.float64)
         coords = np.hstack([coords, pad])
-    return coords.astype(np.float64)
+    return np.asarray(coords, dtype=np.float64)
 
 
 def signed_chiral_volume(coords: np.ndarray, center_idx: int, nbrs: Sequence[int]) -> float:
