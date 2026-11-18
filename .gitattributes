@@ -1,0 +1,3 @@
+# Ensure GitHub Linguist cleanly classifies this repository as 100% Python
+tests/fixtures/** linguist-detectable=false
+*.md linguist-documentation=true
